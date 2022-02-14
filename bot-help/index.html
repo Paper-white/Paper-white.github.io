@@ -15,151 +15,159 @@ document.addEventListener("pjax:success", initScrollReveal);
 <meta property="og:site_name" content="Paper_white白纸的秘密基地">
 <meta property="og:description" content="我的群聊bot功能菜单说明书">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://paper-white.github.io/bot-help/bot-paper-white.jpg">
 <meta property="article:published_time" content="2020-12-25T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-18T13:08:09.096Z">
+<meta property="article:modified_time" content="2022-02-14T12:59:12.408Z">
 <meta property="article:author" content="白纸">
 <meta property="article:tag" content="bot">
 <meta property="article:tag" content="说明">
-<meta name="twitter:card" content="summary"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="白纸"><img width="96" loading="lazy" src="https://q1.qlogo.cn/g?b=qq&amp;nk=841968078&amp;s=100" alt="白纸"><span class="site-author-status" title="我是废物!">😊</span></a><div class="site-author-name"><a href="/about/">白纸</a></div><span class="site-name">Paper_white白纸的秘密基地</span><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">18</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">4</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">14</span></a></div><a class="site-state-item hty-icon-button" href="/download/download/" title="资源分享"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wenjianfenxiang"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/paper-white" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=1412468606" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/121263351" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:me@841968078@qq.com" title="邮箱" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:me@841968078@qq.com" title="QQ" target="_blank" style="color:#0187FB"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/friend/friend/" title="我的小伙伴们" style="color:Golden"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hanbao"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E"><span class="toc-number">1.</span> <span class="toc-text">声明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E8%AE%BE%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">人设：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%EF%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">命令：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E5%88%86%E7%BA%A7-%E4%B8%80%E7%BA%A7%E6%9C%89%E4%BA%8C%E7%BA%A7%E6%89%80%E6%9C%89%E6%9D%83%E9%99%90-%E4%BB%A5%E6%AD%A4%E7%B1%BB%E6%8E%A8"><span class="toc-number">3.1.</span> <span class="toc-text">权限分级(一级有二级所有权限,以此类推)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E7%BA%A7%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4"><span class="toc-number">3.2.</span> <span class="toc-text">四级权限命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AF%B9%E8%AF%9D%EF%BC%88%E8%A7%A6%E5%8F%91%E7%8E%87%E4%B8%BA44-4-%EF%BC%89"><span class="toc-number">3.2.1.</span> <span class="toc-text">自定义对话（触发率为44.4%）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4"><span class="toc-number">3.3.</span> <span class="toc-text">二级权限命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%BA%A7%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4"><span class="toc-number">3.4.</span> <span class="toc-text">一级权限命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89bug-%E6%AD%A3%E5%9C%A8%E5%BC%80%E5%8F%91"><span class="toc-number">4.</span> <span class="toc-text">有bug&#x2F;正在开发</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://paper-white.github.io/bot-help/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="白纸"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Paper_white白纸的秘密基地"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">bot-白纸的使用说明</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2020-12-26 00:00:00" itemprop="dateCreated datePublished" datetime="2020-12-26T00:00:00+08:00">2020-12-26</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2021-11-18 21:08:09" itemprop="dateModified" datetime="2021-11-18T21:08:09+08:00">2021-11-18</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="本文字数">654</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="阅读时长">2m</span></span></span><span class="leancloud_visitors" id="/bot-help/" data-flag-title="bot-白纸的使用说明"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读次数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span class="leancloud-visitors-count"></span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/bot%E8%AF%B4%E6%98%8E/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">bot说明</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/bot/" style="--text-color:#4fc08d"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">bot</span></a><a class="tag-item" href="/tags/%E8%AF%B4%E6%98%8E/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">说明</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#B0A4E3;"><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><blockquote>
-<p>bot唯一账号:<a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&uin=663670086&site=qq&menu=yes">@bot-白纸</a><br>bot所有权：<a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&uin=841968078&site=qq&menu=yes">@白纸</a> </p>
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://paper-white.github.io/bot-help/bot-paper-white.jpg"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="白纸"><img width="96" loading="lazy" src="https://q1.qlogo.cn/g?b=qq&amp;nk=841968078&amp;s=100" alt="白纸"><span class="site-author-status" title="我是废物!">😊</span></a><div class="site-author-name"><a href="/about/">白纸</a></div><span class="site-name">Paper_white白纸的秘密基地</span><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">20</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">4</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">14</span></a></div><a class="site-state-item hty-icon-button" href="/download/download/" title="资源分享"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wenjianfenxiang"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/paper-white" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=1412468606" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/121263351" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:me@841968078@qq.com" title="邮箱" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:me@841968078@qq.com" title="QQ" target="_blank" style="color:#0187FB"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/friend/friend/" title="我的小伙伴们" style="color:Golden"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hanbao"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A5%B3%E7%94%9F%E8%87%AA%E7%94%A899%E6%96%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E7%BE%A4%E8%81%8A%E5%A7%AC%E6%B0%94%E4%BA%BA%E5%A4%87%E4%BB%BD%E4%BB%93%E5%BA%93"><span class="toc-number">1.</span> <span class="toc-text">女生自用99新的一个群聊姬气人备份仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E"><span class="toc-number">1.1.</span> <span class="toc-text">声明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E8%AE%BE%EF%BC%9A"><span class="toc-number">1.2.</span> <span class="toc-text">人设：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%AF%B4%E6%98%8E%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">命令说明：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89bug-%E9%A2%84%E8%AE%A1%E6%B7%BB%E5%8A%A0%E5%8A%9F%E8%83%BD"><span class="toc-number">1.4.</span> <span class="toc-text">有bug&#x2F;预计添加功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E9%A1%B9%E7%9B%AE-%E7%89%B9%E5%88%AB%E6%84%9F%E8%B0%A2"><span class="toc-number">1.5.</span> <span class="toc-text">使用项目&#x2F;特别感谢</span></a></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://paper-white.github.io/bot-help/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="白纸"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Paper_white白纸的秘密基地"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">bot-白纸的使用说明</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2020-12-26 00:00:00" itemprop="dateCreated datePublished" datetime="2020-12-26T00:00:00+08:00">2020-12-26</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2022-02-14 20:59:12" itemprop="dateModified" datetime="2022-02-14T20:59:12+08:00">2022-02-14</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="本文字数">1.2k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="阅读时长">4m</span></span></span><span class="leancloud_visitors" id="/bot-help/" data-flag-title="bot-白纸的使用说明"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读次数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span class="leancloud-visitors-count"></span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/bot%E8%AF%B4%E6%98%8E/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">bot说明</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/bot/" style="--text-color:#4fc08d"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">bot</span></a><a class="tag-item" href="/tags/%E8%AF%B4%E6%98%8E/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">说明</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#B0A4E3;"><p><img src="bot-paper-white.jpg" width = "150" height = "150" loading="lazy"><br></p>
+<h1 id="女生自用99新的一个群聊姬气人备份仓库"><a href="#女生自用99新的一个群聊姬气人备份仓库" class="headerlink" title="女生自用99新的一个群聊姬气人备份仓库"></a><del>女生自用99新的</del>一个群聊姬气人备份仓库</h1><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><blockquote>
+<p>bot唯一账号:<a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&uin=663670086&site=qq&menu=yes">@bot-白纸</a><br>bot所有权：<a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&uin=841968078&site=qq&menu=yes">@白纸</a><br><em>滥用功能会被拉入黑名单哦</em><br><strong>滥用功能会被拉入黑名单哦</strong><br><mark>滥用功能会被拉入黑名单哦</mark></p>
 </blockquote>
-<h2 id="人设："><a href="#人设：" class="headerlink" title="人设："></a>人设：</h2><p>白毛 傲娇 <del>工口萝莉</del> <del>机械飞升</del> <del>异时空同位体</del></p>
-<p><del>人设图什么的我们亲爱的画师还在咕</del></p>
-<h2 id="命令："><a href="#命令：" class="headerlink" title="命令："></a>命令：</h2><blockquote>
-<p>注意：<br>1.[] 当括起来的表示为参数时，请勿加[]<br>2.() 括起来的表示可有可无，请勿加()。<br>3./  表示或者，只能从多个中选择一个。<br>4.// 后面的字体为注释，补充了功能的效果和详细使用方式<br>5.注意空格的位置</p>
+<h2 id="人设："><a href="#人设：" class="headerlink" title="人设："></a>人设：</h2><p>傲娇 <del>工口萝莉</del> <del>机械飞升</del> <del>异时空同位体</del><br><del>人设图什么的我们亲爱的画师还在咕</del>  </p>
+<h2 id="命令说明："><a href="#命令说明：" class="headerlink" title="命令说明："></a>命令说明：</h2><blockquote>
+<p>特殊说明：</p>
+<ol>
+<li>[] 当括起来的表示为参数时，请勿加[]</li>
+<li>() 括起来的表示可有可无，请勿加()。</li>
+<li> | 表示或者，只能从多个中选择一个。</li>
+<li><code>字体</code>为注释，补充了功能的效果和详细使用方式</li>
+<li>注意命令中空格的位置  </li>
+</ol>
 </blockquote>
-<h3 id="权限分级-一级有二级所有权限-以此类推"><a href="#权限分级-一级有二级所有权限-以此类推" class="headerlink" title="权限分级(一级有二级所有权限,以此类推)"></a>权限分级(一级有二级所有权限,以此类推)</h3><ul>
-<li>一级权限：主人</li>
-<li>二级权限：群主</li>
-<li>三级权限：管理员</li>
-<li>四级权限：群员</li>
-<li>黑名单</li>
+<ul>
+<li><input disabled="" type="checkbox"> 标志为未开发完全|有bug暂时停用 的功能</li>
+<li><input checked="" disabled="" type="checkbox"> 标志为可正常使用功能</li>
 </ul>
-<h3 id="四级权限命令"><a href="#四级权限命令" class="headerlink" title="四级权限命令"></a>四级权限命令</h3><table>
-<thead>
-<tr>
-<th><strong>命令</strong></th>
-<th><strong>效果/说明</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>签到 / 打卡</td>
-<td>目前获取积分的唯一途径</td>
-</tr>
-<tr>
-<td>菜单</td>
-<td>返回一个”菜单”</td>
-</tr>
-<tr>
-<td>查询</td>
-<td>查询目前的积分，好感度等信息</td>
-</tr>
-<tr>
-<td>/cat</td>
-<td>发送一个猫猫图片</td>
-</tr>
-<tr>
-<td>点歌 [歌名]</td>
-<td>点歌 使用网易云音源 VIP歌无法点出（给我充个黑胶就能点</td>
-</tr>
-<tr>
-<td>运势</td>
-<td>获取今日占卜结果</td>
-</tr>
-<tr>
-<td>[数字][小时/分钟] 后提醒我 [事件]</td>
-<td>一定时间过后艾特你并提醒你去做[事件]</td>
-</tr>
-<tr>
-<td>赞我</td>
-<td>目前已和签到融为一体</td>
-</tr>
-<tr>
-<td>cp [攻的名字] [受的名字]</td>
-<td>自动生成一篇cp文  <a target="_blank" rel="noopener" href="https://mxhcpstories.github.io/mxh-cp-stories/">文案来源</a></td>
-</tr>
-<tr>
-<td>[地名]天气 / 天气[地名]</td>
-<td>查询某地天气（有延迟+每日调用上限，请不要短时间内连续多次查询</td>
-</tr>
-<tr>
-<td>搜卡[卡名]</td>
-<td>搜索炉石传说卡片</td>
-</tr>
-<tr>
-<td>空调开/空调关/设置温度[数字]/群温度</td>
-<td>群空调</td>
-</tr>
-<tr>
-<td>&gt;github [项目名称]</td>
-<td>快速搜索github</td>
-</tr>
-<tr>
-<td>白纸和我学 [触发词] [回复]</td>
-<td>看下面</td>
-</tr>
-</tbody></table>
-<h4 id="自定义对话（触发率为44-4-）"><a href="#自定义对话（触发率为44-4-）" class="headerlink" title="自定义对话（触发率为44.4%）"></a>自定义对话（触发率为44.4%）</h4><p>使用以下命令进行教学，请勿教含有侮辱性词汇的语句</p>
-<p><code>白纸和我学 [触发词] [回复]</code></p>
-<p>如:  白纸和我学 白纸 我在这里<br>发送 <code>白纸</code><br>白纸则会回复 <code>我在这里</code></p>
-<blockquote>
-<p>特殊回复（放在回复里，带上【】）<br>| 变量名称              | 效果                 |<br>| :——————– | ——————– |<br>| 【艾特】              | 艾特触发回复的人     |<br>| 【头像（-大/中/小）】 | 获取触发回复人的头像 |<br>| 【随机表情】          | 随机一个小表情       |</p>
+<p><strong>功能管理命令</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> /服务列表 <code>列出所有已加载的功能名称</code>  </li>
+<li><input checked="" disabled="" type="checkbox"> /启用 [功能名称] | /禁用 [功能名称] <code>启用/禁用某项功能</code>  </li>
+<li><input checked="" disabled="" type="checkbox"> /禁止 [功能名称] [QQ号] [QQ号2]… <code>禁止[QQ]使用[功能]</code>   </li>
+<li><input checked="" disabled="" type="checkbox"> /允许 [功能名称] [QQ号] [QQ号2]… <code>允许[QQ]使用[功能]</code>  </li>
+<li><input checked="" disabled="" type="checkbox"> /封禁 [QQ号] [QQ号2]… <code>禁止[QQ]使用全部功能</code>  </li>
+<li><input checked="" disabled="" type="checkbox"> /解封 [QQ号] [QQ号2]… <code>允许[QQ]使用全部功能</code>  </li>
+<li><input checked="" disabled="" type="checkbox"> /用法 [功能名称] <code>提供功能的具体使用方式</code>  </li>
+<li><input checked="" disabled="" type="checkbox"> 自检|运行状态 <code>检查CPU 内存 硬盘的使用率</code></li>
+</ul>
+<p><strong>群管命令</strong>  </p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> *入群欢迎  </li>
+<li><input checked="" disabled="" type="checkbox"> *退群通知  </li>
+<li><input checked="" disabled="" type="checkbox"> 设置欢迎语[xxx]  </li>
+<li><code>以下命令需要bot为管理员以上权限</code></li>
+<li><input checked="" disabled="" type="checkbox"> 禁言[@QQ][分钟] <code>禁言[QQ]</code>  </li>
+<li><input checked="" disabled="" type="checkbox"> 解除禁言[@QQ] <code>解除禁言</code>  </li>
+<li><input checked="" disabled="" type="checkbox"> 我要自闭 [时间] [分钟|小时|天] <code>禁言自己[时间]</code>  </li>
+<li><input checked="" disabled="" type="checkbox"> 开启|解除全员禁言  </li>
+<li><input checked="" disabled="" type="checkbox"> 修改名片[@QQ][xxx]  </li>
+<li><input checked="" disabled="" type="checkbox"> 踢出群聊[@QQ]  </li>
+<li><input disabled="" type="checkbox"> 撤回[@QQ] [xxx]  </li>
+<li><input disabled="" type="checkbox"> 警告[@QQ]</li>
+<li><code>以下命令需要bot为群主</code>  </li>
+<li><input checked="" disabled="" type="checkbox"> 申请头衔[xxx]  </li>
+<li><input checked="" disabled="" type="checkbox"> 升为管理[@QQ]  </li>
+<li><input checked="" disabled="" type="checkbox"> 取消管理[@QQ]  </li>
+</ul>
+<p><strong>聊天命令</strong>  </p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 骂我  <code>骂你一句</code></li>
+<li><input checked="" disabled="" type="checkbox"> 艾特[xxx] <code>青云客自动回复(暴躁姬气人)</code></li>
+<li><input checked="" disabled="" type="checkbox"> 来份网易云热评 <code>RT</code></li>
+<li><input checked="" disabled="" type="checkbox"> ?? [缩写] <code>缩写词解释</code></li>
+<li><input checked="" disabled="" type="checkbox"> 讲个笑话[@qq] </li>
+<li><input disabled="" type="checkbox"> 好感度回复</li>
+<li><input checked="" disabled="" type="checkbox"> [bot名字] <code>不会还有人不知道叫什么吧！白纸|纸儿</code></li>
+<li><input checked="" disabled="" type="checkbox"> [戳一戳bot] <code>别戳了别戳了呜呜</code></li>
+</ul>
+<p><strong>B站相关</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 添加订阅[uid] <code>订阅up的动态/视频/直播信息</code></li>
+<li><input checked="" disabled="" type="checkbox"> 取消订阅[uid] <code>取消订阅</code></li>
+<li><input checked="" disabled="" type="checkbox"> 推送列表 <code>列出所有订阅的up</code></li>
+<li><input checked="" disabled="" type="checkbox"> [视频链接] <code>支持三种格式的分享链接以及各种卡片信息|提取视频的标题 播放量 发布时间 封面 三连数量 BV号</code></li>
+<li><input checked="" disabled="" type="checkbox"> <blockquote>
+<p>user info [uid] <code>查询用户B站信息</code></p>
 </blockquote>
-<h3 id="二级权限命令"><a href="#二级权限命令" class="headerlink" title="二级权限命令"></a>二级权限命令</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>自检</td>
-<td>返回cpu和硬盘使用量</td>
-</tr>
-</tbody></table>
-<h3 id="一级权限命令"><a href="#一级权限命令" class="headerlink" title="一级权限命令"></a>一级权限命令</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>/run [代码块]</td>
-<td>快捷运行(一级权限)</td>
-</tr>
-<tr>
-<td>.gm [gold/favor/item/challenge] [修改/读取] [写入值] [艾特]</td>
-<td>修改各种属性(一级权限)</td>
-</tr>
-</tbody></table>
-<h2 id="有bug-正在开发"><a href="#有bug-正在开发" class="headerlink" title="有bug/正在开发"></a>有bug/正在开发</h2><table>
-<thead>
-<tr>
-<th><strong>咕咕咕咕咕</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>好感度回复</td>
-</tr>
-<tr>
-<td>ecy图片</td>
-</tr>
-<tr>
-<td>自定义称呼</td>
-</tr>
-<tr>
-<td>原神角色查询</td>
-</tr>
-<tr>
-<td>以图搜图</td>
-</tr>
-<tr>
-<td>投票禁言</td>
-</tr>
-</tbody></table>
+</li>
+</ul>
+<p><strong>便民命令</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> (网易|酷我|酷狗)点歌[xxx]  </li>
+<li><input checked="" disabled="" type="checkbox"> <blockquote>
+<p>github [xxx] <code>github搜索</code>  </p>
+</blockquote>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <blockquote>
+<p>TL [xxx] <code>翻译</code></p>
+</blockquote>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <blockquote>
+<p>runcode [language] [xxx] <code>懂的都懂</code></p>
+</blockquote>
+</li>
+<li><input checked="" disabled="" type="checkbox"> /启用|/禁用 moyu <code>每天提醒你最近的假期还有几天</code></li>
+<li><input checked="" disabled="" type="checkbox"> 搜卡[xxx] <code>炉石搜卡</code></li>
+<li><input checked="" disabled="" type="checkbox"> [卡组代码] <code>炉石搜卡组</code></li>
+<li><input checked="" disabled="" type="checkbox"> 选择[选项1]还是[选项2]还是[选项3]还… <code>选择困难症帮手，帮你解决烦恼</code></li>
+<li><input disabled="" type="checkbox"> 舞萌DX查分器</li>
+<li><input checked="" disabled="" type="checkbox"> 加密|解密[xxx] <code>base16384加密</code></li>
+</ul>
+<p><strong>娱乐命令</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 签到 <code>暂未实装积分的使用</code></li>
+<li><input checked="" disabled="" type="checkbox"> 获取签到背景 </li>
+<li><input checked="" disabled="" type="checkbox"> 运势 </li>
+<li><input checked="" disabled="" type="checkbox"> 今天是什么少女[@qq]</li>
+<li><input checked="" disabled="" type="checkbox"> 异世界转生[@qq]</li>
+<li><input checked="" disabled="" type="checkbox"> 卖萌[@qq]</li>
+<li><input checked="" disabled="" type="checkbox"> 抽老婆[@qq]</li>
+<li><input checked="" disabled="" type="checkbox"> reborn <code>重开模拟器(后续可能会和某知名仓库联动)</code></li>
+<li><input checked="" disabled="" type="checkbox"> 求签|占卜</li>
+<li><input checked="" disabled="" type="checkbox"> 解签 </li>
+<li><input checked="" disabled="" type="checkbox"> [emoji][emoji] <code>合成emoji</code></li>
+<li><input checked="" disabled="" type="checkbox"> 组cp[@qq][@qq] <code>生成一篇cp文</code></li>
+<li><input checked="" disabled="" type="checkbox"> 抽象翻译[xxx] <code>“不说人话”</code></li>
+<li><input checked="" disabled="" type="checkbox"> 早安|晚安 <code>睡眠时间统计</code></li>
+</ul>
+<p><strong>图片相关命令</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 搜番[图片] <code>搜索图片相关番剧</code></li>
+<li><input checked="" disabled="" type="checkbox"> 放大图片[图片] <code>对二刺猿图片进行放大</code></li>
+<li><input checked="" disabled="" type="checkbox"> 以图搜图[图片] <code>在进行pixiv图片搜索</code></li>
+<li><input checked="" disabled="" type="checkbox"> nsfw打分[图片] <code>工作场合适宜性打分</code></li>
+<li><input checked="" disabled="" type="checkbox"> 鉴赏图片[图片] <code>分析图片标签</code></li>
+<li><input checked="" disabled="" type="checkbox"> 来张[xxx] <code>关键词搜图</code></li>
+<li><input checked="" disabled="" type="checkbox"> 随机图片 <code>随机发送一张图片并评分(大于6级会私发)</code></li>
+<li><input checked="" disabled="" type="checkbox"> 太涩了 <code>仅针对随机图片功能,撤回上一次发送的图片</code></li>
+<li><input checked="" disabled="" type="checkbox"> 爬|冲|摸|搓|拍|丢|敲|吃|啃|撕|蹭|灰度|上翻|下翻|左翻|右翻|反色|倒放|浮雕|打码|负片[图片|@qq] <code>制图</code></li>
+</ul>
+<p><strong>测试功能(随时可能关闭) 以下功能滥用者大概率会被ban掉bot的使用权</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 丢漂流瓶[消息] <code>丢出一个漂流瓶</code></li>
+<li><input checked="" disabled="" type="checkbox"> 捡漂流瓶 <code>捞出一个漂流瓶</code></li>
+<li><input checked="" disabled="" type="checkbox"> 群聊转发 [@qq] [xxx] <code>伪造一份聊天记录</code></li>
+<li><input checked="" disabled="" type="checkbox"> 翻牌 <code>随机艾特一名群友</code></li>
+</ul>
+<h2 id="有bug-预计添加功能"><a href="#有bug-预计添加功能" class="headerlink" title="有bug/预计添加功能"></a>有bug/预计添加功能</h2><ul>
+<li><input disabled="" type="checkbox"> <strong>咕咕咕咕咕</strong></li>
+<li><input disabled="" type="checkbox"> 好感度回复</li>
+<li><input disabled="" type="checkbox"> 自定义称呼</li>
+<li><input disabled="" type="checkbox"> 原神角色查询</li>
+<li><input disabled="" type="checkbox"> 投票禁言</li>
+<li><input disabled="" type="checkbox"> littleskin相关内容支持</li>
+<li><input disabled="" type="checkbox"> 生草复读机</li>
+<li><input disabled="" type="checkbox"> tg群信息转发</li>
+</ul>
+<h2 id="使用项目-特别感谢"><a href="#使用项目-特别感谢" class="headerlink" title="使用项目/特别感谢"></a>使用项目/特别感谢</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/wdvxdr1123/ZeroBot">ZeroBot</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/FloatTech/ZeroBot-Plugin">ZeroBot-plugin</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Mrs4s/go-cqhttp">go-cqhttp</a></li>
+</ul>
 </div><div id="reward-container"><a class="hty-icon-button button-glow" id="reward-button" target="_blank" rel="noopener" href="https://afdian.net/@Paper-white" title="打赏"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></a><div id="reward-comment">支持一下</div><div id="qr" style="display:none;"><div style="display:inline-block"></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>白纸</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="http://paper-white.github.io/bot-help/" title="bot-白纸的使用说明">http://paper-white.github.io/bot-help/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> 许可协议。</li></ul></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/bot-Production/list/" rel="prev" title="从零开始的奶妈级可调教铃心聊天机器人制作系列教程---目录/提问"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">从零开始的奶妈级可调教铃心聊天机器人制作系列教程---目录/提问</span></a></div><div class="post-nav-item"></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>留言区！</span><br></div><div id="valine-container"></div><script>Yun.utils.getScript("https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js", () => {
   const valineConfig = {"enable":true,"appId":"vC1QsosJPUwcFoExWDVzo4DL-MdYXbMMI","appKey":"1118KSFWt4JOD5Ay2lDI7ewC","placeholder":"留下属于你的脚印吧！","avatar":null,"pageSize":10,"visitor":true,"highlight":true,"recordIP":false,"enableQQ":true,"meta":["nick","mail","link"],"el":"#valine-container","lang":"zh-cn"}
   valineConfig.path = "/bot-help/"
   new Valine(valineConfig)
-}, window.Valine);</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2021 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> 白纸</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.4.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.7.0</span></div><div class="footer-custom-text">萌备 by <a href="https://icp.gov.moe/?keyword=20212290" target="_blank">萌ICP备20212290号</a></div><div class="footer-support"><span>本网站由</span><a class="footer-support-logo" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="blank" title="又拍云"><img height="30" src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" alt="又拍云"></a><span>提供 CDN 加速</span></div></footer><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#B0A4E3" stroke-width="2" stroke-linecap="round"></circle></svg></a></div></body></html>
+}, window.Valine);</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2021 – 2022 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> 白纸</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.4.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.7.0</span></div><div class="footer-custom-text">萌备 by <a href="https://icp.gov.moe/?keyword=20212290" target="_blank">萌ICP备20212290号</a></div><div class="footer-support"><span>本网站由</span><a class="footer-support-logo" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="blank" title="又拍云"><img height="30" src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" alt="又拍云"></a><span>提供 CDN 加速</span></div></footer><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#B0A4E3" stroke-width="2" stroke-linecap="round"></circle></svg></a></div></body></html>
