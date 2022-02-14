@@ -20,7 +20,7 @@ document.addEventListener("pjax:success", initScrollReveal);
   const wordcloud_canvas = document.getElementById('wordcloud-canvas')
   wordcloud_canvas.width = document.querySelector('#page').clientWidth - 16
   wordcloud_canvas.height = 350
-  let wordcloud_config = {"list":[["bot",1.9,"/tags/bot/"],["说明",1.1,"/tags/说明/"],["排版",1.1,"/tags/排版/"],["文案",1.1,"/tags/文案/"],["美化",1.1,"/tags/美化/"],["我的世界",1.1,"/tags/我的世界/"],["LittleSkin",1.1,"/tags/LittleSkin/"],["教程",1.8,"/tags/教程/"],["分享",1.1,"/tags/分享/"],["资源",1.1,"/tags/资源/"],["瞎bb",1.5,"/tags/瞎bb/"],["笔记",1.1,"/tags/笔记/"],["学习",1.1,"/tags/学习/"],["python",1.1,"/tags/python/"]],"fontFamily":"'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif","fontWeight":400,"gridSize":10,"weightFactor":13,"backgroundColor":"transparent","color":"random-dark"}
+  let wordcloud_config = {"list":[["bot",1.9,"/tags/bot/"],["说明",1.1,"/tags/说明/"],["我的世界",1.1,"/tags/我的世界/"],["LittleSkin",1.1,"/tags/LittleSkin/"],["排版",1.1,"/tags/排版/"],["文案",1.1,"/tags/文案/"],["美化",1.1,"/tags/美化/"],["教程",1.8,"/tags/教程/"],["分享",1.1,"/tags/分享/"],["资源",1.1,"/tags/资源/"],["笔记",1.1,"/tags/笔记/"],["学习",1.1,"/tags/学习/"],["python",1.1,"/tags/python/"],["瞎bb",1.5,"/tags/瞎bb/"]],"fontFamily":"'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif","fontWeight":400,"gridSize":10,"weightFactor":13,"backgroundColor":"transparent","color":"random-dark"}
   wordcloud_config.hover = function(item, dimension){
     if (!dimension) {
       wordbox.hidden = true
